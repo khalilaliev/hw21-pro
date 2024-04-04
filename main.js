@@ -1,8 +1,6 @@
 function sum() {
   let fixedNumber = 0;
-  return function (num) {
-    return (fixedNumber += num);
-  };
+  return (num) => (fixedNumber += num);
 }
 
 const result = sum();
